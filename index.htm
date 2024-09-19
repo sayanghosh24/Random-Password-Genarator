@@ -17,22 +17,22 @@
         </div>
 
         <div class="options">
-            <label for="length">Password Length:</label>
-            <input type="range" id="length" min="8" max="30" value="16" oninput="updateLengthDisplay()">
+            <label style="color: #fff;" for="length">Password Length:</label>
+            <input class="length" type="range" id="length" min="8" max="30" value="16" oninput="updateLengthDisplay()">
             <p>Length: <span id="lengthDisplay">16</span></p>
                 <div class="check-box">
                     <label>
                         <input type="checkbox" id="uppercase" checked>  Uppercase Letters
-                    </label>&nbsp;&nbsp;
+                    </label><br><br>
                     <label>
                         <input type="checkbox" id="lowercase" checked>  Lowercase Letters
-                    </label><br>
+                    </label><br><br>
                     <label>
                         <input type="checkbox" id="numbers" checked>  Numbers
-                    </label><br>
+                    </label><br><br>
                     <label>
                         <input type="checkbox" id="symbols" checked> Special Characters
-                    </label><br>
+                    </label><br><br>
                 </div>
         </div>
 
@@ -40,6 +40,6 @@
 
         <button class="generate-btn" onclick="generatePassword()">Generate Password</button>
     </div>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
